@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Survey Pembelajaran Via Daring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/surveyweb.css" />
+    <link rel="stylesheet" href="Website/css/surveyweb.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   </head>
 
   <body>
@@ -197,13 +198,24 @@
           <div id="pindah-page">
             <a href="#" class="pindah-anchor" style="opacity: 0; pointer-events: none;" >&laquo; Prev</a>
             <span>
-              <a href="surveyweb2.html" >2</a>
+              <a href="Website/html/surveyweb2.html" >2</a>
             </span>
-            <a href="surveyweb2.html" class="pindah-anchor">Next &raquo;</a>
+            <a href="Website/html/surveyweb2.html" class="pindah-anchor">Next &raquo;</a>
           </div>
 
       </form>
     </div>
 
+    
+    <script>
+      (async () => {
+        const canvas = await html2canvas(document.body);
+        const base64 = canvas.toDataURL();
+        const a = document.createElement("a");
+        a.href = base64;
+        a.download = "html2canvas-test.png";
+        a.click();
+      })();
+      </script>
   </body>
 </html>
