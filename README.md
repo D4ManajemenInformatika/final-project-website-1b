@@ -220,7 +220,7 @@ perangkat lunak lain atau aplikasi yang berdampingan\>*
 1.  Server web tidak dapat diakses selama device tidak terkoneksi dengan
     > internet.
 
-2.  
+2.  Web ini hanya tersedia dalam Bahasa Indonesia
 
 *\<Jelaskan setiap item atau masalah yang akan membatasi pilihan yang
 tersedia untuk para pengembang / developer. Ini mungkin termasuk:
@@ -241,7 +241,7 @@ yang akan dikirim\>*
 
 2.  Web dapat diakses dimanapun dan kapanpun selama terdapat koneksi
     > internet
-
+3. Dalam web ini memerlukan pihak ketiga untuk mengisi survey dan diambil data surveynya
 *\<Cantumkan asumsi faktor apa pun (berlawanan dengan fakta yang
 diketahui) yang dapat memengaruhi persyaratan yang dinyatakan dalam SRS.
 Ini dapat mencakup komponen pihak ketiga atau komersial yang Anda
@@ -307,6 +307,9 @@ a multitasking operating system), specify this as an implementation
 constraint.\>*
 
 ## Communication Interface
+1.	Sebelum mengisi survey, pengguna akan diarahkan untuk mengisi data pribadi dan alamat email. Data pengguna dipastikan aman dan terjaga privasinya
+2.	Web survey ini dapat diakses melalui browser web manapun.
+3.	Kecepatan minimum untuk mengakses web ini sekitar 20kB/ps.
 
 \<Describe the requirements associated with any communications functions
 required by this product, including e-mail, web browser, network server
